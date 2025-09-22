@@ -1,0 +1,23 @@
+{
+  "name": "EmailAccessCode",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "description": "Email do usuário"
+    },
+    "access_code": {
+      "type": "string",
+      "description": "Código de acesso atribuído a este email"
+    },
+    "is_used": {
+      "type": "boolean",
+      "default": false,
+      "description": "Se o código já foi utilizado"
+    }
+  },
+  "required": [
+    "email",
+    "access_code"
+  ]
+}

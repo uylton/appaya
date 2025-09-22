@@ -1,0 +1,29 @@
+{
+  "name": "AuditLog",
+  "type": "object",
+  "properties": {
+    "target_user_id": {
+      "type": "string",
+      "description": "ID do usuário que foi alterado"
+    },
+    "field": {
+      "type": "string",
+      "description": "Campo que foi alterado (ex: graduacao, apelido)"
+    },
+    "old_value": {
+      "type": "string"
+    },
+    "new_value": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Motivo da alteração fornecido pelo admin"
+    }
+  },
+  "required": [
+    "target_user_id",
+    "field",
+    "new_value"
+  ]
+}

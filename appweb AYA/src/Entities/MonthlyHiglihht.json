@@ -1,0 +1,22 @@
+{
+  "name": "MonthlyHighlight",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "ID do aluno em destaque"
+    },
+    "month": {
+      "type": "string",
+      "description": "Mês do destaque no formato YYYY-MM"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Motivo pelo qual o aluno foi destacado"
+    }
+  },
+  "required": [
+    "user_id",
+    "month"
+  ]
+}

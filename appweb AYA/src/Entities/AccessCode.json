@@ -1,0 +1,13 @@
+{
+  "name": "AccessCode",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Código de acesso válido"
+    }
+  },
+  "required": [
+    "code"
+  ]
+}

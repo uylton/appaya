@@ -1,0 +1,38 @@
+{
+  "name": "Location",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome do local"
+    },
+    "address": {
+      "type": "string",
+      "description": "Endereço completo"
+    },
+    "lat": {
+      "type": "number",
+      "description": "Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "description": "Longitude"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefone do local"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observações sobre o local"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL da foto do local"
+    }
+  },
+  "required": [
+    "name",
+    "address"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Teacher",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome completo do professor"
+    },
+    "nickname": {
+      "type": "string",
+      "description": "Apelido na capoeira"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Biografia do professor"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL da foto do professor"
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs dos locais onde ensina"
+    },
+    "grade_id": {
+      "type": "string",
+      "description": "ID da graduação do professor"
+    },
+    "specialties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Especialidades do professor"
+    }
+  },
+  "required": [
+    "name",
+    "nickname"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "EvaluationRequest",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "ID do aluno"
+    },
+    "current_points": {
+      "type": "number",
+      "description": "Pontos atuais do aluno"
+    },
+    "target_grade_id": {
+      "type": "string",
+      "description": "ID da graduação desejada"
+    },
+    "message": {
+      "type": "string",
+      "description": "Mensagem do aluno"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "scheduled"
+      ],
+      "default": "pending",
+      "description": "Status da solicitação"
+    },
+    "admin_notes": {
+      "type": "string",
+      "description": "Notas do admin sobre a avaliação"
+    },
+    "evaluation_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data agendada para avaliação"
+    }
+  },
+  "required": [
+    "student_id",
+    "current_points"
+  ]
+}

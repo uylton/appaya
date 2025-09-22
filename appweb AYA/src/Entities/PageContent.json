@@ -1,0 +1,17 @@
+{
+  "name": "PageContent",
+  "type": "object",
+  "properties": {
+    "page_name": {
+      "type": "string",
+      "description": "Nome da página (ex: 'treinos', 'locais')"
+    },
+    "content": {
+      "type": "string",
+      "description": "Conteúdo da página em formato Markdown"
+    }
+  },
+  "required": [
+    "page_name"
+  ]
+}

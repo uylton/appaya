@@ -1,0 +1,35 @@
+{
+  "name": "Grade",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da graduação (ex: Cordão Branco)"
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Cores do cordão em hexadecimal (ex: [\"#FFFFFF\", \"#FFFF00\"])"
+    },
+    "points_required": {
+      "type": "number",
+      "description": "Pontos necessários para atingir esta graduação"
+    },
+    "order": {
+      "type": "number",
+      "description": "Ordem hierárquica da graduação"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrição da graduação"
+    }
+  },
+  "required": [
+    "name",
+    "colors",
+    "points_required",
+    "order"
+  ]
+}

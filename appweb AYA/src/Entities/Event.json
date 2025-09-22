@@ -1,0 +1,51 @@
+{
+  "name": "Event",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Título do evento"
+    },
+    "date_time": {
+      "type": "string",
+      "format": "datetime-local",
+      "description": "Data e hora do evento"
+    },
+    "location_id": {
+      "type": "string",
+      "description": "ID do local"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrição completa do evento"
+    },
+    "host": {
+      "type": "string",
+      "description": "Responsável pelo evento"
+    },
+    "rsvp_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Número de confirmações"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL da foto do evento"
+    },
+    "price": {
+      "type": "number",
+      "description": "Preço do evento (se houver)"
+    },
+    "max_participants": {
+      "type": "number",
+      "description": "Número máximo de participantes"
+    }
+  },
+  "required": [
+    "title",
+    "date_time",
+    "location_id",
+    "description",
+    "host"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ChatMessage",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "ID do usuário que enviou a mensagem"
+    },
+    "user_nickname": {
+      "type": "string"
+    },
+    "user_photo_url": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "is_deleted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_id",
+    "message"
+  ]
+}

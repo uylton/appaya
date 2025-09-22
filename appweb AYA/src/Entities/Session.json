@@ -1,0 +1,63 @@
+{
+  "name": "Session",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Título do treino"
+    },
+    "date_time": {
+      "type": "string",
+      "format": "datetime-local",
+      "description": "Data e hora do treino"
+    },
+    "location_id": {
+      "type": "string",
+      "description": "ID do local"
+    },
+    "teacher_id": {
+      "type": "string",
+      "description": "ID do professor"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "iniciante",
+        "intermediario",
+        "avancado",
+        "todos"
+      ],
+      "description": "Nível do treino"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Limite de alunos"
+    },
+    "current_participants": {
+      "type": "number",
+      "default": 0,
+      "description": "Número atual de inscritos"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observações sobre o treino"
+    },
+    "recurrence": {
+      "type": "string",
+      "enum": [
+        "none",
+        "weekly",
+        "monthly"
+      ],
+      "default": "none",
+      "description": "Tipo de recorrência"
+    }
+  },
+  "required": [
+    "title",
+    "date_time",
+    "location_id",
+    "teacher_id",
+    "level"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Attendance",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "description": "ID do treino"
+    },
+    "student_id": {
+      "type": "string",
+      "description": "ID do aluno"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "present",
+        "absent",
+        "justified"
+      ],
+      "description": "Status da presença"
+    },
+    "points_earned": {
+      "type": "number",
+      "default": 1,
+      "description": "Pontos ganhos neste treino"
+    },
+    "marked_by": {
+      "type": "string",
+      "description": "ID do admin que marcou presença"
+    },
+    "marked_at": {
+      "type": "string",
+      "format": "datetime-local",
+      "description": "Quando foi marcada a presença"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observações sobre a presença"
+    }
+  },
+  "required": [
+    "session_id",
+    "student_id",
+    "status"
+  ]
+}

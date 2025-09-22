@@ -1,0 +1,32 @@
+{
+  "name": "RSVP",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "ID do evento"
+    },
+    "student_id": {
+      "type": "string",
+      "description": "ID do aluno"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "going",
+        "maybe",
+        "not_going"
+      ],
+      "description": "Status da confirmação"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observações do participante"
+    }
+  },
+  "required": [
+    "event_id",
+    "student_id",
+    "status"
+  ]
+}
